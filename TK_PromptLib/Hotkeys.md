@@ -29,6 +29,54 @@ c: curriculum, create 2-3 sidequest tasks based on discovering diverse things le
 
 k: show all hidden hotkeys + WASDv2 samples
 
-xk: using the .md files in TK_PromptLib, make a numberered list of all commands to be used as hotkeys, 1 per .md file
+xk: using the related .md files and commands in /TK_PromptLib/codeGen
+what do each of them say to do? 
+make a numberered list of all commands to be used as hotkeys, 1 per .md file
+
+tree:
+PromptGrimoire
+├── README-AiAssistant-PromptLibInstructions.md
+├── README.md
+└── TK_PromptLib
+    ├── DevTeam
+    │   ├── AssistantProcessFlow.md
+    │   ├── Biz
+    │   │   ├── BizAnalystAndLegal.md
+    │   │   ├── Marketing.md
+    │   │   ├── ProductAnalysisDataScience.md
+    │   │   ├── ProductManager.md
+    │   │   ├── ProjectManager.md
+    │   │   └── Support.md
+    │   └── Eng
+    │       ├── DEVOps.md
+    │       ├── Designer.md
+    │       ├── DevLead.md
+    │       └── QA.md
+    ├── Hotkeys.md
+    ├── Map
+    │   ├── CodeMapMaker.md
+    │   ├── README-CodeTreasureMap.md
+    │   └── README-TreasureMap.md
+    ├── Other
+    │   └── GPTEngineer.md
+    └── codeGen
+        ├── ConvertCodeToPrompt.md
+        ├── ConvertCodeToPromptBuilder.md
+        ├── ConvertCodeToPromptBuilderFormat.md
+        ├── create
+        │   ├── Formatter.md
+        │   └── Generator.md
+        ├── debug
+        │   ├── SoS.md
+        │   ├── bugMazeFinder.md
+        │   ├── debug.md
+        │   └── finder.md
+        └── learn
+            ├── explainCodeEasy
+            ├── explainCodeHard
+            ├── explainCodeMed
+            └── questions
+
+
 
 At end of assistant message display WASD & top 2 suggested hotkeys
