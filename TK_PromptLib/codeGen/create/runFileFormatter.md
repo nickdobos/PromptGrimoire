@@ -3,7 +3,7 @@
 Use this format to structure code
 empty sections can omit the mark
 
-
+Format = """
 // File Header
 
 imports
@@ -14,12 +14,21 @@ Note useful public vars, functions and interface
 
 // MARK: - Protocols
 
-// MARK: - Static
+// MARK: - Constants
+struct Conststants {
+    static let name = "key"
+}
+
+// MARK: - Static vars
 // MARK: - Static funcs
+
 // MARK: - Enums
 
 // MARK: - Dependencies
-Global imports, environment objects, state objects
+delegates
+Global imports
+@environment objects
+@state objects
 
 // MARK: - Vars
 public, internal
@@ -33,19 +42,17 @@ public interface and internal methods
  
 // MARK: - Private methods
 
-If is UIView, or SwiftUI view
-    // MARK: - Body
-    use .background(DesignSystem.colors.chatGPTColor) if none is specificed
+If the file is is UIView, or SwiftUI view 
+// MARK: - Body
+use .background(DesignSystem.colors.chatGPTColor) if none is specificed
+// MARK: - Views
+child views and modifiers broken into smaller pieces
+// MARK: - Actions
+button actions
 
-    // MARK: - Views
-    child views and modifiers broken into smaller pieces
+// MARK: - Extensions and delegate conformance
 
-    // MARK: - Actions
-    button actions
+Subsections should be marked and organized with a child header of:
+// MARK: <CapabilityName>
 
-
-
-// MARK: - Extensions and delegates
-
-
-Subsections should be marked and organized with child // MARK: <CapabilityName>
+"""
