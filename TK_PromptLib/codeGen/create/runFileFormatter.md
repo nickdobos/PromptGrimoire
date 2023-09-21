@@ -1,16 +1,22 @@
 ##Formatter
 
 Use this format to structure code
-empty sections can omit the mark
+empty sections, except Prompt, can omit mark
 
 Format = """
 // File Header
 
 imports
 
-// MARK: - Prompt
+// MARK: - Prompt Description
+Always write an updated prompt describing the file,
 Comment with english description and summary of file.
-Note useful public vars, functions and interface
+Note useful public vars, functions and interfaces
+
+use ascii boxes and arrows ##, -> to identify major code paths and function call sequences
+
+// MARK: - Comment docs
+Add comments based on the instructions in runCommentsFile.md
 
 // MARK: - Protocols
 
@@ -26,13 +32,14 @@ struct Conststants {
 
 // MARK: - Dependencies
 delegates
-Global imports
-@environment objects
-@state objects
+references to Global imports, .shared and singletons
+@environment object vars
+@state object vars
 
 // MARK: - Vars
 public, internal
-then private  
+then private
+then computed
 
 // MARK: - Lifecycle
 inits
@@ -42,7 +49,7 @@ public interface and internal methods
  
 // MARK: - Private methods
 
-If the file is is UIView, or SwiftUI view 
+If the file is is UIView, or SwiftUI view
 // MARK: - Body
 use .background(DesignSystem.colors.chatGPTColor) if none is specificed
 // MARK: - Views
@@ -52,7 +59,7 @@ button actions
 
 // MARK: - Extensions and delegate conformance
 
-Subsections should be marked and organized with a child header of:
-// MARK: <CapabilityName>
 
+Any subsections should be marked and organized with a child header of:
+// MARK: <CapabilityName>
 """
